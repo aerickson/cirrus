@@ -8,7 +8,7 @@ version = gitLastTagWithCommitCount()
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.1"
+    buildToolsVersion '27.0.3'
 
     defaultConfig {
         minSdkVersion 15
@@ -75,8 +75,8 @@ def gitCommitCount() {
 }
 
 dependencies {
-    compile "com.android.volley:volley:1.0.0"
-    compile('org.simpleframework:simple-xml:2.7.1'){
+    implementation "com.android.volley:volley:1.0.0"
+    implementation('org.simpleframework:simple-xml:2.7.1'){
         exclude group: 'stax'
         exclude group: 'xpp3'
     }
