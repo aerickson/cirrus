@@ -51,9 +51,6 @@ public class CirrusClient {
 //        today.set(Calendar.SECOND, 0);
 //
 //        url.append("&end=").append(DATE_FORMAT.format(today.getTime()));
-        
-        // source now redirects to https, avoid the redirect
-        url = url.replace("http", "https");
 
         return url.toString();
     }
